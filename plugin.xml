@@ -9,8 +9,8 @@
     <description>Use Tencent Browser Service(TBS) instead of System WebView for Cordova App</description>
     <license>Apache 2.0</license>
     <keywords>x5,tencent,tbs,webview</keywords>
-    <repo></repo>
-    <issue></issue>
+    <repo>https://github.com/zsxsoft/cordova-plugin-x5-tbs</repo>
+    <issue>https://github.com/zsxsoft/cordova-plugin-x5-tbs/issues</issue>
 
     <engines>
         <engine name="cordova-android" version=">=4"/>
