@@ -19,7 +19,7 @@
 - cordova-android > 4
 - Android > 4.0
 
-### 安装
+## 安装
 
 ``cordova plugin add cordova-plugin-x5-tbs``
 
@@ -31,13 +31,13 @@ QbSdk.initX5Environment(this, null);
 
 ## 环境
 
-## 当前版本
+### 当前版本
 
 X5：tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143
 
 Chromium: 53.0.2785.49
 
-## 测试用机
+### 测试用机
 
 User-Agent：Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MOB30Z; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043205 Safari/537.36
 
