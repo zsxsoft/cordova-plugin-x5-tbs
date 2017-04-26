@@ -32,5 +32,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsxsoft/cordova-plugin-x5-tbs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zsxsoft/cordova-plugin-x5-tbs/issues"
+  },
+  "homepage": "https://github.com/zsxsoft/cordova-plugin-x5-tbs#readme"
 }
