@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-x5-tbs"
+        version="1.0.0">
+
+    <name>Tencent X5 for Cordova</name>
+    <description>Use Tencent Browser Service(TBS) instead of System WebView for Cordova App</description>
+    <license>Apache 2.0</license>
+    <keywords>x5,tencent,tbs,webview</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <engines>
+        <engine name="cordova-android" version=">=4"/>
+        <engine name="cordova-plugman" version=">=5.2.0"/><!-- needed for gradleReference support -->
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <preference name="webView" value="com.zsxsoft.cordova.x5.X5WebViewEngine"/>
+            <preference name="appUserAgent" value="appX5"/>
+            <preference name="android-minSdkVersion" value="15" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5CookieManager.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5CordovaClientCertRequest.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5CordovaHttpAuthHandler.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5ExposedJsApi.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebChromeClient.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebView.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebViewClient.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+        <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebViewEngine.java" target-dir="src/com/zsxsoft/cordova/x5"/>
+
+        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar" target-dir="libs"/>
+        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
+    </platform>
+
+    <info>
+
+    </info>
+</plugin>

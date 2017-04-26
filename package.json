@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-x5-tbs",
+  "version": "3.1.0",
+  "description": "Use Tencent Browser Service(TBS) instead of System WebView for Cordova App",
+  "cordova": {
+    "id": "cordova-plugin-x5-tbs",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "chromium",
+    "x5",
+    "webview",
+    "tbs",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4"
+    },
+    {
+      "name": "cordova-plugman",
+      "version": ">=4.2.0"
+    }
+  ],
+  "author": "zsx <zsx@zsxsoft.com>",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
