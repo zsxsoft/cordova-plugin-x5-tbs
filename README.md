@@ -1,3 +1,8 @@
+
+## 官方已有Cordova支持
+X5官方已经支持，这个项目大概没有存在的意义了。见：http://bbs.mb.qq.com/thread-1945157-1-1.html
+
+
 # cordova-plugin-x5-tbs
 
 把``Cordova``的``WebView``替换为腾讯的[X5](http://x5.tencent.com/)。使用腾讯TBS完整版SDK。
