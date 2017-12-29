@@ -33,15 +33,9 @@ QbSdk.initX5Environment(this, null);
 
 ### 当前版本
 
-X5：tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143
+X5：tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025
 
 Chromium: 53.0.2785.49
-
-### 测试用机
-
-User-Agent：Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MOB30Z; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043205 Safari/537.36
-
-User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; ONEPLUS A3000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043128 Safari/537.36
 
 ## 内核替换
 
