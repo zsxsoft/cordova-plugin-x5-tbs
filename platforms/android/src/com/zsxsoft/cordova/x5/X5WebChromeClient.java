@@ -254,7 +254,7 @@ public class X5WebChromeClient extends WebChromeClient {
       parentEngine.cordova.startActivityForResult(new CordovaPlugin() {
         @Override
         public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-          Uri[] result = FileChooserParams.parseResult(resultCode, intent);
+          Uri[] result = android.webkit.WebChromeClient.FileChooserParams.parseResult(resultCode, intent);
           Log.d(LOG_TAG, "Receive file chooser URL: " + result);
           filePathsCallback.onReceiveValue(result);
         }
