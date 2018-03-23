@@ -20,7 +20,7 @@
     <!-- android -->
     <platform name="android">
 
-        <config-file target="res/xml/config.xml" parent="/*">
+	<config-file target="app/src/main/res/xml/config.xml" parent="/*">
             <preference name="webView" value="com.zsxsoft.cordova.x5.X5WebViewEngine"/>
             <preference name="appUserAgent" value="appX5"/>
             <preference name="android-minSdkVersion" value="15" />
