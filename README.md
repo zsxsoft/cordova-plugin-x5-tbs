@@ -1,8 +1,3 @@
-
-## 官方已有Cordova支持
-X5官方已经支持，这个项目大概没有存在的意义了。见：http://bbs.mb.qq.com/thread-1945157-1-1.html
-
-
 # cordova-plugin-x5-tbs
 
 把``Cordova``的``WebView``替换为腾讯的[X5](http://x5.tencent.com/)。使用腾讯TBS完整版SDK。
@@ -38,9 +33,7 @@ QbSdk.initX5Environment(this, null);
 
 ### 当前版本
 
-X5：tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025
-
-Chromium: 53.0.2785.49
+X5：tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180918_120327.jar
 
 ## 内核替换
 
