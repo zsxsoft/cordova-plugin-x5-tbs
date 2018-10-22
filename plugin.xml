@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-x5-tbs"
-        version="3.6.0">
+        version="3.7.0">
 
     <name>Tencent X5 for Cordova</name>
     <description>Use Tencent Browser Service(TBS) instead of System WebView for Cordova App</description>
@@ -19,20 +19,19 @@
 
     <!-- android -->
     <platform name="android">
-        
-	<config-file target="config.xml" parent="/*">
+
+        <config-file target="res/xml/config.xml" parent="/*">
             <preference name="webView" value="com.zsxsoft.cordova.x5.X5WebViewEngine"/>
             <preference name="appUserAgent" value="appX5"/>
-            <preference name="android-minSdkVersion" value="17" />
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/*">
+        <edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-        </config-file>
+        </edit-config>
 
         <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5CookieManager.java" target-dir="src/com/zsxsoft/cordova/x5"/>
         <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5CordovaClientCertRequest.java" target-dir="src/com/zsxsoft/cordova/x5"/>
@@ -43,9 +42,9 @@
         <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebViewClient.java" target-dir="src/com/zsxsoft/cordova/x5"/>
         <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebViewEngine.java" target-dir="src/com/zsxsoft/cordova/x5"/>
 
-        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.6.0.1183_43604_sharewithdownload_withoutGame_obfs_20180211_105126.jar" target-dir="libs"/>
-        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
-    </platform>
+        <lib-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180918_120327.jar" />
+        <lib-file src="platforms/android/libs/armeabi/liblbs.so" />
+        </platform>
 
     <info>
 
