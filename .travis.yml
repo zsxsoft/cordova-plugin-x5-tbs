@@ -1,0 +1,19 @@
+language: android
+
+node_js:
+  - 10
+
+install:
+  - npm cache clean
+  - npm install
+  - npm install -g cordova
+  - echo y | android update sdk -u --filter android-22,android-23
+  - mkdir /app
+
+script:
+  - ./scripts/create-test-project.sh 6
+  - ./scripts/create-test-project.sh 7
+
+
+release:
+  - exit 0
