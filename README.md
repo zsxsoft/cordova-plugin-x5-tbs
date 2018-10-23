@@ -16,7 +16,7 @@
 
 ## 支持环境
 
-- cordova-android > 4
+- cordova-android > 6.4
 - Android > 4.0
 
 ## 安装
@@ -27,6 +27,22 @@
 
 ```java
 QbSdk.initX5Environment(this, null);
+```
+
+另出于某些玄学原因，如应用出现Crash，请手动将以下权限复制入AndroidManifest.xml
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.READ_SETTINGS" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<!-- 硬件加速对X5视频播放非常重要，建议开启 -->
+<uses-permission android:name="android.permission.GET_TASKS" />
 ```
 
 ## 环境
@@ -49,3 +65,9 @@ X5：tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180
 与本项目有关的问题，如加载后无法正常启动，在本项目Issue区内提交新Issue即可。
 
 X5相关问题，请参阅：[X5技术指南](http://x5.tencent.com/tbs/guide.html)
+
+### 常见玄学问题
+
+#### 为什么X5内核没有被成功加载
+
+请使用官方TBS Studio测试，如其安装的TBS Demo左上角仍显示``Sys core``，证明X5内核可能无法被第三方App调用。请参阅X5技术指南或反馈到X5官方。
