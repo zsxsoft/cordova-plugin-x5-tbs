@@ -57,10 +57,12 @@ before_install:
 - echo -e "d56f5187479451eabf01fb78af6dfcb131a6481e" >> $ANDROID_HOME/licenses/android-sdk-license
 - echo -e "84831b9409646a918e30573bab4c9c91346d8abd" >> $ANDROID_HOME/licenses/android-sdk-preview-license
 - yes | sdkmanager "platforms;android-26"
+- mkdir /app
 
 script:
   - ./scripts/create-test-project.sh 6
   - ./scripts/create-test-project.sh 7
+  - ./scripts/create-test-project.sh 8
 
 
 release:
