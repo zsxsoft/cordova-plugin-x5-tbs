@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-x5-tbs",
-  "version": "3.7.0",
+  "version": "4.3.0",
   "description": "Use Tencent Browser Service(TBS) instead of System WebView for Cordova App",
   "cordova": {
     "id": "cordova-plugin-x5-tbs",

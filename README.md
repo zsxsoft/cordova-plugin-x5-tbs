@@ -49,7 +49,7 @@ QbSdk.initX5Environment(this, null);
 
 ### 当前版本
 
-X5：tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180918_120327.jar
+X5：tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar
 
 ## 内核替换
 
@@ -70,4 +70,5 @@ X5相关问题，请参阅：[X5技术指南](http://x5.tencent.com/tbs/guide.ht
 
 #### 为什么X5内核没有被成功加载
 
-请使用官方TBS Studio测试，如其安装的TBS Demo左上角仍显示``Sys core``，证明X5内核可能无法被第三方App调用。请参阅X5技术指南或反馈到X5官方。
+先测试是否是64位程序的问题。修改platforms/android/build.gradle，在``productFlavors``之下，``armv7``之上，加入``ndk{abiFilters "armeabi"}``，再看看是否有问题。该条问题见：https://x5.tencent.com/tbs/technical.html#/detail/sdk/1/34cf1488-7dc2-41ca-a77f-0014112bcab7
+
