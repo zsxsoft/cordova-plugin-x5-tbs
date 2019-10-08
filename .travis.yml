@@ -1,4 +1,4 @@
-`matrix:
+matrix:
   include:
   - os: linux
     sudo: false
