@@ -49,7 +49,7 @@ QbSdk.initX5Environment(this, null);
 
 ### 当前版本
 
-X5：tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180918_120327.jar
+X5：tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar
 
 ## 内核替换
 
