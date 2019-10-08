@@ -50,7 +50,8 @@
         <source-file src="platforms/android/src/com/zsxsoft/cordova/x5/X5WebViewEngine.java" target-dir="src/com/zsxsoft/cordova/x5"/>
 
         <lib-file src="platforms/android/libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar" />
-        <lib-file src="platforms/android/libs/armeabi/liblbs.so" />
+        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="src/main/jniLibs/armeabi/" />
+        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi/" />
         </platform>
 
     <info>
